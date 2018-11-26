@@ -1,0 +1,37 @@
+<appian-plugin name="Task Smart Services" key="TaskServicesPlugin">
+
+  <plugin-info>
+    <description>Task Smart Services</description>
+    <vendor name="Appian Corporation" url="http://www.appian.com" />
+    <version>1.2.1</version>
+    <application-version min="6.1.0" />
+  </plugin-info>
+
+
+  <smart-service name="PauseTask" key="PauseTask"
+    class="com.appiancorp.process.runtime.activities.PauseTaskActivity" />
+
+  <smart-service name="Resume Task" key="ResumeTask"
+    class="com.appiancorp.process.runtime.activities.ResumeTaskActivity" />
+
+  <smart-service name="Reassign Task" key="ReassignTask"
+    class="com.appiancorp.process.runtime.activities.ReassignTaskActivity" />
+
+  <smart-service name="Accept Task" key="AcceptTask"
+    class="com.appiancorp.process.runtime.activities.AcceptTaskActivity" />
+
+  <smart-service name="Cancel Task" key="CancelTask"
+    class="com.appiancorp.process.runtime.activities.CancelTaskActivity" />
+
+  <smart-service name="Set Task Deadline" key="SetTaskDeadline"
+    class="com.appiancorp.process.runtime.activities.SetTaskDeadlineActivity" />
+
+  <smart-service name="Set Task Priority" key="SetTaskPriority"
+    class="com.appiancorp.process.runtime.activities.SetTaskPriorityActivity" />
+  <function key="getTaskAcceptedTimestamp" class="com.appiancorp.expression.custom.GetTaskAcceptedTimeFunction"/>
+
+  <function key="getTaskAssignedTimestamp" class="com.appiancorp.expression.custom.GetTaskAssignedTimeFunction"/>
+
+  <function key="getActiveTaskIDsForProcess" class="com.appiancorp.expression.custom.getActiveTasksForProcessFunction"/>
+
+</appian-plugin>
